@@ -15,11 +15,3 @@ def search(request):
             return render(request, 'search_results.html',
                           {'books': books, 'query': q})
     return render(request, 'search_form.html', {'error': error})
-
-
-
-
-
-#################
-def bootstrap_demo(req):
-    return render(req,'bootstrap-demo.html')
